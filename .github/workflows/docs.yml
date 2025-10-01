@@ -10,5 +10,5 @@ jobs:
           test -d Subnetting
           test -d Routing_Optimization || test -d Routing_Optimizzation
           test -d "Wi-Fi_IPv6" || test -d "Wi-Fi_IpV6"
-          # facoltativo: verifica che esistano PNG in docs/
-          find . -path "*/docs/*.png" -o -path "*/docs/screenshots/*.png" | wc -l
+          # cerca screenshot sia jpg che png
+          find . -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" \) | wc -l

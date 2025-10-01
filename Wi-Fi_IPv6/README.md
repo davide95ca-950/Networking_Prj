@@ -1,36 +1,4 @@
-
-# Wi-Fi + IPv4/IPv6 + NAT_ITA
-
-## Obiettivo
-Configurare due reti distinte (PYME e CASA) con più servizi integrati:  
-- rete wireless con **WPA2-PSK**,  
-- **DHCP** per l’assegnazione automatica,  
-- **NAT/PAT** per l’accesso a Internet,  
-- **IPv4/IPv6** su parte della topologia,  
-- regole di **port forwarding** verso un server interno.
-
-## Topologia
-Router domestici collegati a Internet e client Wi-Fi.  
-
-## Attività svolte
-- Configurazione SSID e sicurezza WPA2, con broadcast SSID disattivato nella rete CASA.  
-- Setup DHCP con pool e indirizzi esclusi.  
-- Indirizzamento IPv4/IPv6 su PYME e PC-ipv6.  
-- NAT/PAT per l’accesso esterno.  
-- Port forwarding verso il server interno.  
-
-## Risultati
-- Ping IPv4 e IPv6 corretti.  
-- Server interno raggiungibile via HTTP/HTTPS dall’esterno.  
-- DHCP funzionante e connessione Wi-Fi stabile.
-
-
-## Versioni del progetto
-- **pt4.zip**: archivio con la topologia iniziale.  
-- **pt4_FV.pkt**: versione finale completata.
-
-
-# Wi-Fi + IPv4/IPv6 + NAT_ENG
+# Wi-Fi + IPv4/IPv6 + NAT
 
 ## Objective
 Configure two separate networks (PYME and CASA) with multiple integrated services:  
@@ -58,3 +26,6 @@ Home routers connected to the Internet with Wi-Fi clients.
 ## Project versions
 - **pt4.zip**: archive with the initial topology.  
 - **pt4_FV.pkt**: completed final version.
+
+## Docs
+- Topology Screenshot

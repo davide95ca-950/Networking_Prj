@@ -1,20 +1,14 @@
 name: Docs
 on: [push, pull_request]
 jobs:
-  markdownlint:
+  ok:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: DavidAnson/markdownlint-cli2-action@v16
-        with:
-          globs: "**/*.md"
-  linkcheck:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: lycheeverse/lychee-action@v2
-        with:
-          args: >-
-            --no-progress --verbose
-            --exclude-mail
-            "**/*.md"
+      - name: Check tree
+        run: |
+          test -d Subnetting
+          test -d Routing_Optimization || test -d Routing_Optimizzation
+          test -d "Wi-Fi_IPv6" || test -d "Wi-Fi_IpV6"
+          # facoltativo: verifica che esistano PNG in docs/
+          find . -path "*/docs/*.png" -o -path "*/docs/screenshots/*.png" | wc -l

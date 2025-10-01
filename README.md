@@ -1,3 +1,4 @@
+![docs](https://github.com/davide95ca-950/Networking_Prj/actions/workflows/docs.yml/badge.svg)
 
 # Networking_Prj
 

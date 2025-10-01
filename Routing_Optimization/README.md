@@ -1,26 +1,3 @@
-
-# Routing Table Optimization
-
-## Obiettivo
-Ridurre il numero di entry nelle tabelle di routing di una rete multi-router, mantenendo la piena connettività.  
-
-## Topologia
-Rete con più router interconnessi e server esterno raggiungibile da tutte le sottoreti.  
-
-## Attività svolte
-- Configurazione iniziale delle rotte statiche.  
-- Aggregazione dei prefissi dove possibile.  
-- Inserimento delle default route verso il router di uscita.  
-- Verifica con ping e traceroute.
-
-## Risultati
-- Connettività end-to-end mantenuta.  
-- Tabelle di routing più compatte.  
-
-## Versioni del progetto
-- **pt3.zip**: archivio con la topologia iniziale.  
-- **pt3_final.pkt**: versione finale completata.
-
 # Routing Table Optimization
 
 ## Objective
@@ -42,4 +19,7 @@ Network with multiple interconnected routers and an external server reachable fr
 ## Project versions
 - **pt3.zip**: archive with the initial topology.  
 - **pt3_final.pkt**: completed final version.
+
+## Docs
+- Topology Screenshot
 
